@@ -2,23 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7914" started-at="2019-07-20T23:41:02Z" finished-at="2019-07-20T23:41:10Z">
+  <suite name="Default suite" duration-ms="3028" started-at="2019-07-20T23:47:38Z" finished-at="2019-07-20T23:47:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7914" started-at="2019-07-20T23:41:02Z" finished-at="2019-07-20T23:41:10Z">
+    <test name="Default test" duration-ms="3028" started-at="2019-07-20T23:47:38Z" finished-at="2019-07-20T23:47:41Z">
       <class name="iFrames">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:iFrames@46d56d67]" name="setUp" is-config="true" duration-ms="1726" started-at="2019-07-20T23:41:02Z" finished-at="2019-07-20T23:41:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:iFrames@14acaea5]" name="setUp" is-config="true" duration-ms="1839" started-at="2019-07-20T23:47:38Z" finished-at="2019-07-20T23:47:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="actionDemo()[pri:0, instance:iFrames@46d56d67]" name="actionDemo" duration-ms="1059" started-at="2019-07-20T23:41:03Z" finished-at="2019-07-20T23:41:04Z">
+        <test-method status="PASS" signature="actionDemo()[pri:0, instance:iFrames@14acaea5]" name="actionDemo" duration-ms="1168" started-at="2019-07-20T23:47:40Z" finished-at="2019-07-20T23:47:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- actionDemo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:iFrames@46d56d67]" name="tearDown" is-config="true" duration-ms="5110" started-at="2019-07-20T23:41:04Z" finished-at="2019-07-20T23:41:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- iFrames -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

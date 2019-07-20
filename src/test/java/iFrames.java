@@ -56,7 +56,7 @@ public class iFrames {
 
 
 	
-	@AfterClass
+	//@AfterClass
 	public void tearDown() throws InterruptedException {
 		
 		Thread.sleep(5000);
