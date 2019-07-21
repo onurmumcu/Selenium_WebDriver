@@ -8,6 +8,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+
+//dragAndDrop()
+//switchTo()
+//switchTo().defaultContent()
+
+
+
 public class iFrames {
 	
 	private static WebDriver driver ;
@@ -21,45 +28,42 @@ public class iFrames {
 	
 	
 	@Test
-	public void actionDemo() {
+	public void dragAndDrop() {
 		driver .get("http://jqueryui.com/droppable/");
-		driver.switchTo().frame(driver.findElement(By.cssSelector("iframe.demo-frame"))); 
-		driver.findElement(By.id("draggable")).click();
+		
+		System.out.println("Toplam iFrame sayisi = "+ driver.findElements(By.tagName("iframe")).size());
+		
+		
+		//driver.switchTo().frame(driver.findElement(By.cssSelector("iframe.demo-frame"))); 
+		//driver.findElement(By.id("draggable")).click();
+		
+		
+		driver.switchTo().frame(0);
+	
+
 		
 		
 		
+		Actions a = new Actions(driver);
+	WebElement source = driver.findElement(By.id("draggable"));
+	WebElement target = driver.findElement(By.id("droppable"));
 		
+		a.dragAndDrop(source, target).build().perform();
+
 		
+		driver.switchTo().defaultContent();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+			
 	}
 	
 	
-	
-	
-	
-	
-	
-	
 
 
 	
-	//@AfterClass
+	@AfterClass
 	public void tearDown() throws InterruptedException {
 		
-		Thread.sleep(5000);
+		Thread.sleep(9000);
 
 		driver.close();
 		driver.quit();

@@ -32,8 +32,25 @@ public class MultipleWindows {
 	
 	
 	@Test
-	public void actionDemo() {
-		driver .get("http://jqueryui.com/droppable/");
+	public void switchFrame() {
+		driver .get("https://accounts.google.com/signin");
+		driver.findElement(By.linkText("Help")).click();
+		System.out.println("Birinci Title ------> "+ driver.getTitle());
+		
+		Set<String> windowsId = driver.getWindowHandles();
+		
+	Iterator<String> it = windowsId.iterator();
+	String firstWindow= it.next();
+	String secondWindow = it.next();
+	
+	driver.switchTo().window(secondWindow);
+	
+	System.out.println("Ikinci Title ------> "+ driver.getTitle());
+	
+	driver.switchTo().window(firstWindow);
+	
+	System.out.println("Tekrar Birinci Title ------> "+ driver.getTitle());
+
 		
 	}
 	

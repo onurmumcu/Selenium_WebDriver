@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3028" started-at="2019-07-20T23:47:38Z" finished-at="2019-07-20T23:47:41Z">
+  <suite name="Default suite" duration-ms="4642" started-at="2019-07-21T21:40:47Z" finished-at="2019-07-21T21:40:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3028" started-at="2019-07-20T23:47:38Z" finished-at="2019-07-20T23:47:41Z">
-      <class name="iFrames">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:iFrames@14acaea5]" name="setUp" is-config="true" duration-ms="1839" started-at="2019-07-20T23:47:38Z" finished-at="2019-07-20T23:47:40Z">
+    <test name="Default test" duration-ms="4642" started-at="2019-07-21T21:40:47Z" finished-at="2019-07-21T21:40:52Z">
+      <class name="MultipleWindows">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:MultipleWindows@14acaea5]" name="setUp" is-config="true" duration-ms="1734" started-at="2019-07-21T21:40:47Z" finished-at="2019-07-21T21:40:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="actionDemo()[pri:0, instance:iFrames@14acaea5]" name="actionDemo" duration-ms="1168" started-at="2019-07-20T23:47:40Z" finished-at="2019-07-20T23:47:41Z">
+        <test-method status="PASS" signature="switchFrame()[pri:0, instance:MultipleWindows@14acaea5]" name="switchFrame" duration-ms="2886" started-at="2019-07-21T21:40:49Z" finished-at="2019-07-21T21:40:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- actionDemo -->
-      </class> <!-- iFrames -->
+        </test-method> <!-- switchFrame -->
+      </class> <!-- MultipleWindows -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
