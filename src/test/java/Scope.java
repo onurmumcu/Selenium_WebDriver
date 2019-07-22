@@ -36,15 +36,17 @@ public class Scope {
 		System.out.println(coloumndriver.findElements(By.tagName("a")).size());
 		
 		//4- click on each link in the coloumn and check if the pages are opening-
-		for(int i=1;i<coloumndriver.findElements(By.tagName("a")).size();i++)
+		for(int i=1; i<coloumndriver.findElements(By.tagName("a")).size(); i++)
 		{
 			
-			String clickonlinkTab=Keys.chord(Keys.CONTROL,Keys.ENTER);
+			String clickonlinkTab=Keys.chord(Keys.COMMAND,Keys.ENTER);
 			
 			coloumndriver.findElements(By.tagName("a")).get(i).sendKeys(clickonlinkTab);
 			Thread.sleep(5000L);
 			
-		}// opens all the tabs
+		}
+		
+		// opens all the tabs
 		Set<String> abc=driver.getWindowHandles();//4
 		Iterator<String> it=abc.iterator();
 		
