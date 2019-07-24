@@ -47,32 +47,35 @@ public class EksiSozluk {
 		
 		
 		for(int i=0; i<gundemLinkSayisi; i++) {
-			
-			
-			WebDriverWait d=new WebDriverWait(driver,20);
-			d.until(ExpectedConditions.elementToBeClickable(By.id("index-section")));
-			
-			
-			System.out.println(linkler.get(i).getTagName());
-			
-			//System.out.println((i+1)+". defa Yuklendi ve beklendi");
-			
-			//gundemFooter.findElements(By.tagName("a")).get(i).	click();
-			
-			//Thread.sleep(4000);
-			//System.out.println(gundemFooter.findElements(By.tagName("a")).get(i).getText());
-			
-			
-			
 		
-			//Thread.sleep(5000L);
-
-			//driver.findElement(By.xpath("//div[@id='resultsContainer']/section/article[1]")).click();
-			   
 			
+     		WebElement link1 = linkler.get(i);
+			System.out.println((i+1)+". "+link1.getText());
 			
+//			WebDriverWait d=new WebDriverWait(driver,20);
+//			d.until(ExpectedConditions.elementToBeClickable(By.id("index-section")));
+//			
+//			
+//			System.out.println(linkler.get(i).getTagName());
+//			
+//			//System.out.println((i+1)+". defa Yuklendi ve beklendi");
+//			
+//			//gundemFooter.findElements(By.tagName("a")).get(i).	click();
+//			
+//			//Thread.sleep(4000);
+//			//System.out.println(gundemFooter.findElements(By.tagName("a")).get(i).getText());
+//			
+//			
+//			
+//		
+//			//Thread.sleep(5000L);
+//
+//			//driver.findElement(By.xpath("//div[@id='resultsContainer']/section/article[1]")).click();
+//			   
+//			
+//			
+	}
 		}
-		}
 	
 	
 	
@@ -81,7 +84,7 @@ public class EksiSozluk {
 	
 	
 	
-	//@AfterClass
+	//AfterClass
 	public void tearDown() throws InterruptedException {
 		
 		Thread.sleep(5000);
