@@ -34,13 +34,24 @@ public class EksiSozluk {
 	
 	//*[@id="partial-index"]/div[1]/h2
 	
+	public String exctractDigits(String str) {
+		return str.replaceAll("[^0-9]" ,"");
+	}
+	
+	
+	
 	@Test
 	public void gundemListesi() throws InterruptedException {
 		driver .get("https://eksisozluk.com");
 		
-		WebElement gundemFooter = driver.findElement(By.id("index-section"));
-		System.out.println("Toplam Gundem Sayisi --> "+gundemFooter.findElements(By.tagName("a")).size());
+		//WebElement gundemFooter = driver.findElement(By.id("index-section"));
+		WebElement gundemFooter = driver.findElement(By.cssSelector("div[class='robots-nocontent main-left-frame']"));
 
+		
+		
+		
+		System.out.println("Toplam Gundem Sayisi --> "+gundemFooter.findElements(By.tagName("a")).size());
+System.out.println("-------------------------------------------");
 		int gundemLinkSayisi =gundemFooter.findElements(By.tagName("a")).size();
 		
 		List<WebElement> linkler = gundemFooter.findElements(By.tagName("a"));
@@ -49,8 +60,19 @@ public class EksiSozluk {
 		for(int i=0; i<gundemLinkSayisi; i++) {
 		
 			
-     		WebElement link1 = linkler.get(i);
-			System.out.println((i+1)+". "+link1.getText());
+     		WebElement link = linkler.get(i);
+     		
+			String text = link.getText();
+			String ooo = text.replaceAll("[^0-9]" ,"");
+			//System.out.println((i+1)+". "+text.replaceAll("[^0-9]" ," "));
+			System.out.println((i+1)+". "+ooo);
+
+			
+			
+			//System.out.println((i+1)+". "+link.getText());
+			
+			//System.out.println((i+1)+". "+link.getText());
+			
 			
 //			WebDriverWait d=new WebDriverWait(driver,20);
 //			d.until(ExpectedConditions.elementToBeClickable(By.id("index-section")));
@@ -84,7 +106,7 @@ public class EksiSozluk {
 	
 	
 	
-	//AfterClass
+	@AfterClass
 	public void tearDown() throws InterruptedException {
 		
 		Thread.sleep(5000);
