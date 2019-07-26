@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="EksiSozluk">
+      <class name="herokuapp.iFrame">
         <methods>
           <include name="setUp"/>
-          <include name="gundemListesi"/>
+          <include name="tearDown"/>
+          <include name="deneme"/>
         </methods>
-      </class> <!-- EksiSozluk -->
+      </class> <!-- herokuapp.iFrame -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

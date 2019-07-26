@@ -1,3 +1,7 @@
+package udemy;
+import java.util.Iterator;
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -8,20 +12,15 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class MouseInteraction{
+public class MultipleWindows {
 	
+
 	// https://www.softwaretestinghelp.com/selenium-webdriver-commands-selenium-tutorial-17/
 	
-	//Actions class
-	//click()
-	//keyDown(Keys.SHIFT)
-	//sendKeys()
-	//build()
-	//perform()
-	//doubleClick() 
-	//contextClick()
 	
+	//getWindowHandles()
 	
+
 	
 	private static WebDriver driver ;
 	
@@ -34,17 +33,26 @@ public class MouseInteraction{
 	
 	
 	@Test
-	public void actionDemo() {
-		driver .get("https://amazon.com");
-		Actions a = new Actions(driver);
+	public void switchFrame() {
+		driver .get("https://accounts.google.com/signin");
+		driver.findElement(By.linkText("Help")).click();
+		System.out.println("Birinci Title ------> "+ driver.getTitle());
 		
+		Set<String> windowsId = driver.getWindowHandles();
 		
-		WebElement move = driver.findElement(By.cssSelector("a[id='nav-link-accountList']"));  
+	Iterator<String> it = windowsId.iterator();
+	String firstWindow= it.next();
+	String secondWindow = it.next();
+	
+	driver.switchTo().window(secondWindow);
+	
+	System.out.println("Ikinci Title ------> "+ driver.getTitle());
+	
+	driver.switchTo().window(firstWindow);
+	
+	System.out.println("Tekrar Birinci Title ------> "+ driver.getTitle());
+
 		
-		a.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").build().perform(); // When use Actions, after locate the elements you need to use build and perform method
-		
-		
-		a.moveToElement(move).contextClick().build().perform();    
 	}
 	
 	
@@ -54,7 +62,7 @@ public class MouseInteraction{
 	
 	
 	
-    @AfterClass
+    //@AfterClass
 	public void tearDown() throws InterruptedException {
 		
 		Thread.sleep(5000);
@@ -62,5 +70,6 @@ public class MouseInteraction{
 		driver.close();
 		driver.quit();
 	}
+
 
 }

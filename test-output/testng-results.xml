@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14327" started-at="2019-07-25T03:23:00Z" finished-at="2019-07-25T03:23:15Z">
+  <suite name="Default suite" duration-ms="11666" started-at="2019-07-26T02:41:53Z" finished-at="2019-07-26T02:42:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14327" started-at="2019-07-25T03:23:00Z" finished-at="2019-07-25T03:23:15Z">
-      <class name="TableGrid">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TableGrid@46d56d67]" name="setUp" is-config="true" duration-ms="4587" started-at="2019-07-25T03:23:00Z" finished-at="2019-07-25T03:23:05Z">
+    <test name="Default test" duration-ms="11666" started-at="2019-07-26T02:41:53Z" finished-at="2019-07-26T02:42:05Z">
+      <class name="herokuapp.iFrame">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:herokuapp.iFrame@3532ec19]" name="setUp" is-config="true" duration-ms="2438" started-at="2019-07-26T02:41:53Z" finished-at="2019-07-26T02:41:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tableBul()[pri:0, instance:TableGrid@46d56d67]" name="tableBul" duration-ms="557" started-at="2019-07-25T03:23:05Z" finished-at="2019-07-25T03:23:06Z">
+        <test-method status="PASS" signature="deneme()[pri:0, instance:herokuapp.iFrame@3532ec19]" name="deneme" duration-ms="97" started-at="2019-07-26T02:41:56Z" finished-at="2019-07-26T02:41:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tableBul -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TableGrid@46d56d67]" name="tearDown" is-config="true" duration-ms="9164" started-at="2019-07-25T03:23:06Z" finished-at="2019-07-25T03:23:15Z">
+        </test-method> <!-- deneme -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:herokuapp.iFrame@3532ec19]" name="tearDown" is-config="true" duration-ms="9113" started-at="2019-07-26T02:41:56Z" finished-at="2019-07-26T02:42:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TableGrid -->
+      </class> <!-- herokuapp.iFrame -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
