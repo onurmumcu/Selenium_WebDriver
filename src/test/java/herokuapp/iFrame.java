@@ -24,8 +24,14 @@ public class iFrame {
 		
 		driver.switchTo().frame(0);
 		driver.findElement(By.id("tinymce")).clear();
+		driver.findElement(By.id("tinymce")).sendKeys("deneme");
 		
+		driver.switchTo().defaultContent();
+		driver.findElement(By.xpath("//*[@id=\'mceu_3\']/button")).click();
 		
+		driver.switchTo().frame(0);
+		driver.findElement(By.id("tinymce")).click();
+		driver.findElement(By.id("tinymce")).sendKeys("onur");
 		
 		
 	}
