@@ -21,7 +21,8 @@ public class Scope {
 //1. Give me the count of links on the page.
 		//2. Count of footer section-
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Users/Selenium/chromedriver");
+
 		WebDriver driver=new ChromeDriver();
 		
 		driver.get("http://qaclickacademy.com/practice.php");
