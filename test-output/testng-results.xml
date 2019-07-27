@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1791" started-at="2019-07-26T04:21:51Z" finished-at="2019-07-26T04:21:52Z">
+  <suite name="Default suite" duration-ms="28877" started-at="2019-07-27T21:34:30Z" finished-at="2019-07-27T21:34:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1791" started-at="2019-07-26T04:21:51Z" finished-at="2019-07-26T04:21:52Z">
-      <class name="udemy.PopUp">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:udemy.PopUp@26653222]" name="setUp" is-config="true" duration-ms="1765" started-at="2019-07-26T04:21:51Z" finished-at="2019-07-26T04:21:52Z">
+    <test name="Default test" duration-ms="28877" started-at="2019-07-27T21:34:30Z" finished-at="2019-07-27T21:34:59Z">
+      <class name="AutoIT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoIT@c038203]" name="setUp" is-config="true" duration-ms="2617" started-at="2019-07-27T21:34:30Z" finished-at="2019-07-27T21:34:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deneme()[pri:0, instance:udemy.PopUp@26653222]" name="deneme" duration-ms="9" started-at="2019-07-26T04:21:52Z" finished-at="2019-07-26T04:21:52Z">
+        <test-method status="PASS" signature="deneme()[pri:0, instance:AutoIT@c038203]" name="deneme" duration-ms="16604" started-at="2019-07-27T21:34:32Z" finished-at="2019-07-27T21:34:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deneme -->
-      </class> <!-- udemy.PopUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:AutoIT@c038203]" name="tearDown" is-config="true" duration-ms="9642" started-at="2019-07-27T21:34:49Z" finished-at="2019-07-27T21:34:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AutoIT -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
