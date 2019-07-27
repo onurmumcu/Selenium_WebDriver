@@ -5,8 +5,8 @@
     <classes>
       <class name="AutoIT">
         <methods>
-          <include name="denem"/>
           <include name="tearDown"/>
+          <include name="deneme"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- AutoIT -->

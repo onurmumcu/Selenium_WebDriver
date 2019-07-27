@@ -18,7 +18,8 @@ public class AutoIT {
 	
 	@BeforeClass
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe"); 
+		System.setProperty("webdriver.chrome.driver", "/Users/Selenium/chromedriver"); 
 		
 	}
 	
@@ -39,18 +40,18 @@ public class AutoIT {
 		driver.get("https://altoconvertpdftojpg.com/");
 		driver.findElement(By.cssSelector("[class*='btn--choose']")).click();
 		Thread.sleep(3000);
-		Runtime.getRuntime().exec("C:\\Users\\Onur\\Desktop\\deneme.exe");
+//		Runtime.getRuntime().exec("C:\\Users\\Onur\\Desktop\\deneme.exe");
+//		
+//		WebDriverWait wait = new WebDriverWait(driver, 10);
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[class*='medium']")));
+//		
+//		driver.findElement(By.cssSelector("button[class*='medium']")).click();
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Download Now")));
+//		driver.findElement(By.linkText("Download Now")).click();
+//		
+//		Thread.sleep(3000);
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[class*='medium']")));
-		
-		driver.findElement(By.cssSelector("button[class*='medium']")).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Download Now")));
-		driver.findElement(By.linkText("Download Now")).click();
-		
-		Thread.sleep(3000);
-		
-		File f =new File(downloadPath+"\\Converted.zip");
+		File f =new File(downloadPath+"/Converted.zip");
 		if(f.exists()) {
 			System.out.println("Dosya yuklenmis   :) ");
 		}else {

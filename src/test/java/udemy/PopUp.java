@@ -18,13 +18,12 @@ public class PopUp {
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "/Users/Selenium/chromedriver");
 		driver = new ChromeDriver();
-		//driver.get("https://the-internet.herokuapp.com");		//admin:admin@
-		driver.get("admin:admin@https://the-internet.herokuapp.com/basic_auth");
+		driver.get("https://the-internet.herokuapp.com");		//admin:admin@
 	}
 	
 	@Test
 	public void deneme() {
-		//driver.findElement(By.linkText("Basic Auth")).click();
+		driver.findElement(By.linkText("Basic Auth")).click();
 		
 		
 	}
