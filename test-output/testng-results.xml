@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27336" started-at="2019-07-27T22:20:38Z" finished-at="2019-07-27T22:21:06Z">
+  <suite name="Default suite" duration-ms="9978" started-at="2019-07-29T04:42:16Z" finished-at="2019-07-29T04:42:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27336" started-at="2019-07-27T22:20:38Z" finished-at="2019-07-27T22:21:06Z">
-      <class name="AutoIT">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:AutoIT@c038203]" name="setUp" is-config="true" duration-ms="7" started-at="2019-07-27T22:20:38Z" finished-at="2019-07-27T22:20:38Z">
+    <test name="Default test" duration-ms="9978" started-at="2019-07-29T04:42:16Z" finished-at="2019-07-29T04:42:26Z">
+      <class name="EksiSozluk">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:EksiSozluk@d8355a8]" name="setUp" is-config="true" duration-ms="2296" started-at="2019-07-29T04:42:16Z" finished-at="2019-07-29T04:42:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deneme()[pri:0, instance:AutoIT@c038203]" name="deneme" duration-ms="17660" started-at="2019-07-27T22:20:38Z" finished-at="2019-07-27T22:20:56Z">
+        <test-method status="PASS" signature="gundemListesi()[pri:0, instance:EksiSozluk@d8355a8]" name="gundemListesi" duration-ms="7652" started-at="2019-07-29T04:42:19Z" finished-at="2019-07-29T04:42:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deneme -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:AutoIT@c038203]" name="tearDown" is-config="true" duration-ms="9653" started-at="2019-07-27T22:20:56Z" finished-at="2019-07-27T22:21:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- AutoIT -->
+        </test-method> <!-- gundemListesi -->
+      </class> <!-- EksiSozluk -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

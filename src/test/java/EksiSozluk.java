@@ -1,4 +1,4 @@
-package udemy;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -64,10 +64,11 @@ System.out.println("-------------------------------------------");
      		WebElement link = linkler.get(i);
      		
 			String text = link.getText();
-			String ooo = text.replaceAll("[^0-9]" ,"");
+			String mmm = text.replaceAll("[^\\D]", "" );
+			//String ooo = text.replaceAll("[^0-9]" ,"");
 			//System.out.println((i+1)+". "+text.replaceAll("[^0-9]" ," "));
-			System.out.println((i+1)+". "+ooo);
-
+			//System.out.println((i+1)+". "+text);
+			System.out.println((i+1)+". "+mmm);
 			
 			
 			//System.out.println((i+1)+". "+link.getText());
@@ -107,7 +108,7 @@ System.out.println("-------------------------------------------");
 	
 	
 	
-	@AfterClass
+	//@AfterClass
 	public void tearDown() throws InterruptedException {
 		
 		Thread.sleep(5000);
