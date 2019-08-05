@@ -64,11 +64,15 @@ System.out.println("-------------------------------------------");
      		WebElement link = linkler.get(i);
      		
 			String text = link.getText();
-			String mmm = text.replaceAll("[^\\D]", "" );
+			
+			text.trim();
+			
+			
+			//String mmm = text.replaceAll("[^\\D]", "" );
 			//String ooo = text.replaceAll("[^0-9]" ,"");
 			//System.out.println((i+1)+". "+text.replaceAll("[^0-9]" ," "));
-			//System.out.println((i+1)+". "+text);
-			System.out.println((i+1)+". "+mmm);
+			System.out.println((i+1)+". "+text);
+			//System.out.println((i+1)+". "+mmm);
 			
 			
 			//System.out.println((i+1)+". "+link.getText());
@@ -108,7 +112,7 @@ System.out.println("-------------------------------------------");
 	
 	
 	
-	//@AfterClass
+	@AfterClass
 	public void tearDown() throws InterruptedException {
 		
 		Thread.sleep(5000);
