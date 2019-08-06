@@ -16,13 +16,17 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import utilities.Driver;
+
 public class WebDriverWaitDemo {
 	private static WebDriver driver ;
 
 	@BeforeClass
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		driver = new ChromeDriver();
+		
+		Driver.getDriver("mac");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		//driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");		
 	}
 	

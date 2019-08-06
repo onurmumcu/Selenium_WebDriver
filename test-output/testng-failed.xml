@@ -1,33 +1,15 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="udemy.RadioButtons">
+      <class name="herokuapp.WebDriverWaitDemo">
         <methods>
+          <include name="setUp"/>
           <include name="tearDown"/>
           <include name="deneme"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- udemy.RadioButtons -->
+      </class> <!-- herokuapp.WebDriverWaitDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
-    <classes>
-      <class name="herokuapp.FluentWaitDemo">
-        <methods>
-          <include name="deneme"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- herokuapp.FluentWaitDemo -->
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
->>>>>>> b1e7ec7393483e15085e8fd513b0f7bb1b939099

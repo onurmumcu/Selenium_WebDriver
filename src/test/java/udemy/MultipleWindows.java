@@ -22,38 +22,70 @@ public class MultipleWindows {
 	
 
 	
-	private static WebDriver driver ;
+	//private static WebDriver driver ;
+	WebDriver driver ;
 	
+
 	
 	@BeforeClass
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "/Users/Selenium/chromedriver");
 		driver = new ChromeDriver();
-	}
-	
-	
-	@Test
-	public void switchFrame() {
+		
 		driver .get("https://accounts.google.com/signin");
 		driver.findElement(By.linkText("Help")).click();
-		System.out.println("Birinci Title ------> "+ driver.getTitle());
+	}
+	
+	public void switchToWindowByTitle(String title) {
+		Set<String> windows = driver.getWindowHandles();
+		//System.out.println("Amount of windows that are currently present :: "+windows.size());
+		for(String window: windows) {
+			driver.switchTo().window(window);
+			if(driver.getTitle().startsWith(title)||driver.getTitle().equalsIgnoreCase(title)){
+				break;
+			}else {
+				continue;
+			}
+		}
+	}
+	
+	@Test
+	public void deneme() {
+		switchToWindowByTitle("Sign");
+		System.out.println(driver.getTitle());
 		
-		Set<String> windowsId = driver.getWindowHandles();
+		switchToWindowByTitle("Google");
+		System.out.println(driver.getTitle());
 		
-	Iterator<String> it = windowsId.iterator();
-	String firstWindow= it.next();
-	String secondWindow = it.next();
-	
-	driver.switchTo().window(secondWindow);
-	
-	System.out.println("Ikinci Title ------> "+ driver.getTitle());
-	
-	driver.switchTo().window(firstWindow);
-	
-	System.out.println("Tekrar Birinci Title ------> "+ driver.getTitle());
-
+		switchToWindowByTitle("Sign");
+		System.out.println(driver.getTitle());
 		
 	}
+	
+	
+	
+//	@Test
+//	public void switchFrame() {
+//		driver .get("https://accounts.google.com/signin");
+//		driver.findElement(By.linkText("Help")).click();
+//		System.out.println("Birinci Title ------> "+ driver.getTitle());
+//		
+//		Set<String> windowsId = driver.getWindowHandles();
+//		
+//	Iterator<String> it = windowsId.iterator();
+//	String firstWindow= it.next();
+//	String secondWindow = it.next();
+//	
+//	driver.switchTo().window(secondWindow);
+//	
+//	System.out.println("Ikinci Title ------> "+ driver.getTitle());
+//	
+//	driver.switchTo().window(firstWindow);
+//	
+//	System.out.println("Tekrar Birinci Title ------> "+ driver.getTitle());
+//
+//		
+//	}
 	
 	
 	
