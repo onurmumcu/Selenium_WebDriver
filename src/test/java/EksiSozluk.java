@@ -63,16 +63,20 @@ System.out.println("-------------------------------------------");
 			
      		WebElement link = linkler.get(i);
      		
-			String text = link.getText();
-			
-			text.trim();
-			
+			//String text = link.getText();
+			String text = link.getAttribute("innerHTML");
+     	//String text = link.getAttribute("firstText");
+			//String text = link.getAttribute("value");
+     		
+     		
+			//text.trim();
+			String array[]= text.split("<", 2);
 			
 			//String mmm = text.replaceAll("[^\\D]", "" );
 			//String ooo = text.replaceAll("[^0-9]" ,"");
 			//System.out.println((i+1)+". "+text.replaceAll("[^0-9]" ," "));
-			System.out.println((i+1)+". "+text);
-			//System.out.println((i+1)+". "+mmm);
+			//System.out.println((i+1)+". "+text);
+			System.out.println((i+1)+". "+array[0]);
 			
 			
 			//System.out.println((i+1)+". "+link.getText());

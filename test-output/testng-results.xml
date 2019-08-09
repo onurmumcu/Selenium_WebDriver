@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4571" started-at="2019-08-06T04:22:03Z" finished-at="2019-08-06T04:22:08Z">
+  <suite name="Default suite" duration-ms="13266" started-at="2019-08-09T07:26:43Z" finished-at="2019-08-09T07:26:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4571" started-at="2019-08-06T04:22:03Z" finished-at="2019-08-06T04:22:08Z">
-      <class name="udemy.MultipleWindows">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:udemy.MultipleWindows@28d25987]" name="setUp" is-config="true" duration-ms="3140" started-at="2019-08-06T04:22:03Z" finished-at="2019-08-06T04:22:07Z">
+    <test name="Default test" duration-ms="13266" started-at="2019-08-09T07:26:43Z" finished-at="2019-08-09T07:26:56Z">
+      <class name="EksiSozluk">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:EksiSozluk@59fa1d9b]" name="setUp" is-config="true" duration-ms="1764" started-at="2019-08-09T07:26:43Z" finished-at="2019-08-09T07:26:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deneme()[pri:0, instance:udemy.MultipleWindows@28d25987]" name="deneme" duration-ms="1409" started-at="2019-08-06T04:22:07Z" finished-at="2019-08-06T04:22:08Z">
+        <test-method status="PASS" signature="gundemListesi()[pri:0, instance:EksiSozluk@59fa1d9b]" name="gundemListesi" duration-ms="6305" started-at="2019-08-09T07:26:45Z" finished-at="2019-08-09T07:26:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deneme -->
-      </class> <!-- udemy.MultipleWindows -->
+        </test-method> <!-- gundemListesi -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:EksiSozluk@59fa1d9b]" name="tearDown" is-config="true" duration-ms="5175" started-at="2019-08-09T07:26:51Z" finished-at="2019-08-09T07:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- EksiSozluk -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
